@@ -1,0 +1,111 @@
+        body {
+            background: linear-gradient(to right, #212222, #8f8d8d);
+        }
+
+
+        .header {
+            position: fixed;
+            width: 100%;
+            transition: translate 0.3s ease-in-out;
+        }
+        
+        .header__promotion {
+            background: linear-gradient(to right, #03336b, #810303);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .header__promotion-text {
+            font-size: 22px;
+        }
+        .header__nav {
+            display: flex;
+            background-color: #000000;
+            padding: 20px 40px;
+        }
+        .header__logo,
+        .header__link {
+            color: #f1f1f1;
+            text-decoration: none;
+        }
+        .header__logo {
+            font-size: 32px;
+        }
+        .header__links-container {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+        .header__link {
+            margin: 0 5px;
+            font-size: 20px;
+        }
+        .content-section {
+            padding: 200px 20px 80px;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        .content-section__title {
+            margin-bottom: 20px;
+            color: white;
+            align-items: center;
+        }
+
+        h1 {
+            color: #f1f1f1;
+        }
+
+        h2 {
+            color: #070707;
+        }
+        
+        
+        
+        /* Style de la carte de ticket */
+        .ticket-container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+        }
+
+        .ticket {
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 23%; 
+            margin: 10px 0; 
+            padding: 20px;
+        }
+
+        .ticket img {
+            width: 100px;
+            height: auto;
+        }
+
+        .ticket button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .ticket button:hover {
+            background-color: #333;
+        }
+
+        
+        @media (max-width: 1200px) {
+            .ticket {
+                width: 48%; 
+            }
+        }
+
+        @media (max-width: 768px) {
+            .ticket {
+                width: 100%; 
+            }
+        }
